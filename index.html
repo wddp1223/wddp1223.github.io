@@ -174,6 +174,104 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/16/kuayv/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://img1.baidu.com/it/u=3491393576,3218961492&fm=26&fmt=auto&gp=0.jpg">
+      <meta itemprop="name" content="无敌大胖">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="无敌大胖的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/07/16/kuayv/" class="post-title-link" itemprop="url">跨域</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-07-16 10:09:22 / 修改时间：10:13:18" itemprop="dateCreated datePublished" datetime="2021-07-16T10:09:22+08:00">2021-07-16</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2021/07/16/kuayv/#SOHUCS" itemprop="discussionUrl">
+        <span id="url::http://example.com/2021/07/16/kuayv/" class="cy_cmt_count" data-xid="2021/07/16/kuayv/" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>同源策略请求 ajax/fetch<br>跨域传输<br>协议域名端口号都一样就是同源 只要有一个不同就是跨域</p>
+<h1 id="JSONP"><a href="#JSONP" class="headerlink" title="JSONP"></a>JSONP</h1><pre><code>script img link iframe 不存在跨域请求的限制
+用法：使用标签的src属性方式
+缺点：只能GET请求 安全性差
+</code></pre>
+<h1 id="CORS"><a href="#CORS" class="headerlink" title="CORS"></a>CORS</h1><pre><code>用法：客户端发送请求，
+       服务器端设置相关的请求头信息（需要处理options试探请求）
+缺点：只能设置一个源（一个地址）的请求  如果是多个就不能携带cookie
+</code></pre>
+<h1 id="proxy"><a href="#proxy" class="headerlink" title="proxy"></a>proxy</h1><pre><code>用法：在webpack.config.js的devServer配置
+缺点：不能在线上使用
+</code></pre>
+<h1 id="nginx反向代理"><a href="#nginx反向代理" class="headerlink" title="nginx反向代理"></a>nginx反向代理</h1><pre><code> 不需要前端干啥
+</code></pre>
+<h1 id="不常用"><a href="#不常用" class="headerlink" title="不常用"></a>不常用</h1><h2 id="postMessage"><a href="#postMessage" class="headerlink" title="postMessage"></a>postMessage</h2><h2 id="WebScoket"><a href="#WebScoket" class="headerlink" title="WebScoket"></a>WebScoket</h2><h2 id="iframe跨域"><a href="#iframe跨域" class="headerlink" title="iframe跨域"></a>iframe跨域</h2><p> 只能实现：同一个主域，不同子域之间的操作<br> document.domain + iframe<br> window.name + iframe<br> location.hash + ifrnme<br> node中间件代理</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/15/new/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -470,7 +568,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
